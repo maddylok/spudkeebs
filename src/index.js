@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import {home, about } from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,6 +12,16 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// ReactDOM.render(
+//   <Router>
+//      <Routes>
+//         <Route path='/' component={home}/>
+//       <Route  path='/about' component={about }/>
+//     </Routes>
+//   </Router>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
