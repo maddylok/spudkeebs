@@ -3,6 +3,11 @@
   src: url('./Helvetica\ Neue\ UltraLight.ttf');
 }
 
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url('./HelveticaNeueBold.ttf');
+}
+
 body {
   margin: 0;
   font-family: helveticaNeue;
