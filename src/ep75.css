@@ -1,0 +1,63 @@
+#ep75-1 {
+    height: 400px;
+}
+
+.content p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content {
+    padding: 20px;
+}
+
+#stock-board {
+    height: 500px;
+}
+
+#box {
+    height: 700px;
+}
+
+.stock-specs {
+    display: inline-flex;
+}
+
+.specs-description {
+    padding: 20px;
+}
+
+h2 {
+    font-family: helveticaNeueBold;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+#switches {
+    height: 700px;
+}
+
+.switch-specs {
+    display: inline-flex;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: helveticaNeueBold;
+}
+
+#final-board {
+    height: 500px;
+    padding: 20px;
+}
+
+#final-board2 {
+    height: 500px;
+}
+
+.final-img {
+    display: inline-flex;
+    padding: 20px;
+    align-items: center;
+}

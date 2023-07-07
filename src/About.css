@@ -1,6 +1,7 @@
 .about h1{
     font-weight: bolder;
     font-size: 50px;
+    font-family: helveticaNeueBold;
 }
 
 .about p{
@@ -12,3 +13,20 @@
     padding: 20px;
 }
 
+#me {
+    height: 400px;
+}
+
+#wiggle {
+    height: 40px;
+}
+
+#insta-logo {
+    height: 20px;
+    margin-right: 8px;
+}
+
+#twitch-logo {
+    height: 20px;
+    margin-right: 8px;
+}

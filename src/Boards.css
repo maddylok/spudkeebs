@@ -1,0 +1,28 @@
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: helveticaNeueBold;
+}
+
+.builds p {
+    font-size: 30px;
+}
+
+.builds img {
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.builds {
+    display: inline-flex;
+}
+
+img{
+    transition: transform 1s;
+    margin:0 auto;
+}
+.builds img:hover{
+    transform:scale(1.2);
+}

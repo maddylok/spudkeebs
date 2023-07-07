@@ -16,7 +16,46 @@
     font-size: 3rem;
     font-weight: 600;
     margin-left: 1rem;
+    display: inline-flex;
+    align-items: center;
 }
+
+.brand-name img {
+    height: 40px;
+    margin-left: 8px;
+    flex-direction: column;
+}
+
+.navigation-item:hover {
+    display: inline-block;
+    position: relative;
+    color: #9e8c43;
+}
+
+.navigation-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #9e8c43;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navigation-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* need to figure out how to get rid of underline on navbar border */
+
+/* 
+.navigation-item:hover {
+    transform:scale(1.2);
+} */
 
 .navigation-menu {
     margin-left: auto;
@@ -61,7 +100,7 @@
 }
 
 .hamburger:hover {
-    background-color: #000000;
+    background-color: #9e8c43;
 }
 
 @media screen and (max-width: 768px) {

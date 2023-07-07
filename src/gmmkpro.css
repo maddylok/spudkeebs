@@ -1,0 +1,40 @@
+.content {
+    padding: 20px
+}
+
+#gmmk-header {
+    height: 400px;
+}
+
+#gmmk-box {
+    height: 700px;
+    padding: 20px;
+}
+
+.stock-specs {
+    display: inline-flex;
+    align-items: center;
+}
+
+.specs-container {
+    padding: 20px;
+}
+
+#gmmk-switch {
+    height: 700px;
+}
+
+.switch-specs {
+    display: inline-flex;
+    padding: 20px;
+}
+
+.switch-specs-description {
+    margin-right: 50px;
+    margin-top: 80px;
+
+}
+
+#final-build {
+    height: 400px;
+}
