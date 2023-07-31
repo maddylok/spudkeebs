@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/navbar.css";
 
 const Rk68 = () => {
   document.body.style.backgroundColor = "#f5e8bc"
@@ -118,16 +119,16 @@ export function Navbar() {
         className="navigation-menu">
         <ul>
           <li>
-            <a href="/home">home</a>
+            <a className="navigation-item" href="/home">home</a>
           </li>
           <li>
-            <a href="/boards">builds</a>
+            <a className="navigation-item" href="/boards">builds</a>
           </li>
           <li>
-            <a href="/about">about</a>
+            <a className="navigation-item" href="/about">about</a>
           </li>
           <li>
-            <a href="/contact">contact</a>
+            <a className="navigation-item" href="/contact">contact</a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../gmmkpro.css";
+import "../components/navbar.css";
 import gmmkpro_1 from './images/gmmkpro_1.jpg';
 import gmmkpro_2 from './images/gmmkpro_2.jpg';
 import gmmkpro_3 from './images/gmmkpro_3.jpg';
@@ -110,16 +111,16 @@ export function Navbar() {
         className="navigation-menu">
         <ul>
           <li>
-            <a href="/home">home</a>
+            <a className="navigation-item" href="/home">home</a>
           </li>
           <li>
-            <a href="/boards">boards</a>
+            <a className="navigation-item" href="/boards">boards</a>
           </li>
           <li>
-            <a href="/about">about</a>
+            <a className="navigation-item" href="/about">about</a>
           </li>
           <li>
-            <a href="/contact">contact</a>
+            <a className="navigation-item" href="/contact">contact</a>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../ep75.css";
+import "../components/navbar.css";
 import ep75_1 from './images/ep75_1.jpg';
 import ep75_2 from './images/ep75_2.jpg';
 import ep75_3 from './images/ep75_3.jpg';
@@ -130,13 +131,13 @@ export function Navbar() {
             <a href="/home">home</a>
           </li>
           <li>
-            <a href="/boards">boards</a>
+            <a className="navigation-item" href="/boards">boards</a>
           </li>
           <li>
-            <a href="/about">about</a>
+            <a className="navigation-item" href="/about">about</a>
           </li>
           <li>
-            <a href="/contact">contact</a>
+            <a className="navigation-item" href="/contact">contact</a>
           </li>
         </ul>
       </div>

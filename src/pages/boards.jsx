@@ -1,5 +1,6 @@
 import React from "react";
 import "../Boards.css";
+import "../components/navbar.css";
 import keeb3square from './images/keeb3square.jpg';
 import rk from './images/rk.jpg';
 import gmmk from './images/gmmk.jpg';
@@ -65,16 +66,16 @@ export function Navbar() {
         className="navigation-menu">
         <ul>
           <li>
-            <a href="/home">home</a>
+            <a className="navigation-item" href="/home">home</a>
           </li>
           <li>
-            <a href="/boards">boards</a>
+            <a className="navigation-item" href="/boards">boards</a>
           </li>
           <li>
-            <a href="/about">about</a>
+            <a className="navigation-item" href="/about">about</a>
           </li>
           <li>
-            <a href="/contact">contact</a>
+            <a className="navigation-item" href="/contact">contact</a>
           </li>
         </ul>
       </div>

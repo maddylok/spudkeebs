@@ -26,15 +26,21 @@
     flex-direction: column;
 }
 
-.navigation-item:hover {
+.navigation-item {
     display: inline-block;
     position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-item:hover {
     color: #9e8c43;
 }
 
 .navigation-item::after {
     content: '';
     position: absolute;
+    display: block;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
@@ -72,7 +78,7 @@
     margin: 0 1rem;
 }
 
-.navigation-menu li a {
+.navigation-menu li {
     /* increases the surface area of the anchor tag to span more than just the anchor text */
     text-decoration: none;
     display: block;

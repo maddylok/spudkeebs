@@ -8,7 +8,7 @@ import keeb3 from './images/keeb3.jpg';
 import totoro from './images/totoro.gif';
 import me from './images/me.jpg';
 import zoom75 from './images/zoom75.jpeg';
-import "../components/navbar.css"
+import "../components/navbar.css";
 
 function Home() {
 	document.body.style.backgroundColor = "#f5e8bc"
