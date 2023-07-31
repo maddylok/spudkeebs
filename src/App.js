@@ -13,7 +13,7 @@ import Gmmkpro from './pages/gmmkpro';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
           <Route index element={<Welcome />} />
           <Route path='/Welcome' element={<Welcome />} />
