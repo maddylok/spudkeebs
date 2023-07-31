@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import keeb1 from './images/keeb1.jpg';
-import keeb2 from './images/keeb2.jpg';
+import gmmk3 from './images/gmmkpro_3.jpg';
 import keeb3 from './images/keeb3.jpg';
 import totoro from './images/totoro.gif';
 import me from './images/me.jpg';
@@ -65,9 +65,9 @@ export const CarouselPage = () => {
 					</a>
 				</div>
 				<div className="slide">
-					<a href="/home">
-						<img src={keeb2} />
-						<p className="legend">tofu60 acrylic</p>
+					<a href="/gmmkpro">
+						<img src={gmmk3} />
+						<p className="legend">gmmk pro</p>
 					</a>
 				</div>
 				<div className="slide">
