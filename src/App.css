@@ -81,8 +81,8 @@ p {
   background: none;
   font-family: helveticaNeueBold;
   color: rgb(255, 255, 255);
-  font-size: 100px;
-  display: inline-flex;
+  font-size: 5vw;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,8 @@ p {
 }
 
 .intro img{
-  max-height: 50vh;
+  max-width: 40%;
+  height: auto;
   display: inline-flex;
   justify-content: center;
 }
@@ -124,7 +125,8 @@ p {
 }
 
 .work-in-prog img{
-  max-height: 80vh;
+  max-width: 40%;
+  height: auto;
   display: inline-flex;
   justify-content: center;
 }
@@ -132,4 +134,8 @@ p {
 .recs p{
   font-size: 25px;
   font-weight: 600;
+}
+
+h1 {
+  font-size: 4vw;
 }

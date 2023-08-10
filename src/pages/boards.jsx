@@ -1,10 +1,11 @@
 import React from "react";
 import "../Boards.css";
-import "../components/navbar.css";
 import keeb3square from './images/keeb3square.jpg';
 import rk from './images/rk.jpg';
-import gmmk from './images/gmmk.jpg';
+import gmmk from './images/gmmk/gmmk.jpg';
 import keychron from './images/keychron.jpg';
+import "../components/navbar.css";
+import Navbar from '../components/Navbar';
 
 const Boards = () => {
   document.body.style.backgroundColor = "#f5e8bc"
@@ -41,47 +42,4 @@ const Boards = () => {
     </div>
   );
 };
-
-export function Navbar() {
-  return (
-    <nav className="navigation">
-      <a href="/home" className="brand-name">
-        spud keebs
-      </a>
-      <button className="hamburger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div
-        className="navigation-menu">
-        <ul>
-          <li>
-            <a className="navigation-item" href="/home">home</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/boards">boards</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/about">about</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}
-
-
 export default Boards;

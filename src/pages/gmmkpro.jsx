@@ -1,9 +1,21 @@
 import React from "react";
 import "../gmmkpro.css";
 import "../components/navbar.css";
-import gmmkpro_1 from './images/gmmkpro_1.jpg';
-import gmmkpro_2 from './images/gmmkpro_2.jpg';
-import gmmkpro_3 from './images/gmmkpro_3.jpg';
+import Navbar from '../components/Navbar';
+import gmmkpro_1 from './images/gmmk/gmmkpro_1.jpg';
+import gmmkpro_2 from './images/gmmk/gmmkpro_2.jpg';
+import gmmkpro_3 from './images/gmmk/gmmkpro_3.jpg';
+import gmmk_1 from './images/gmmk/gmmk_1.JPG';
+import gmmk_2 from './images/gmmk/gmmk_2.JPG';
+import gmmk_3 from './images/gmmk/gmmk_3.JPG';
+import gmmk_4 from './images/gmmk/gmmk_4.JPG';
+import gmmk_5 from './images/gmmk/gmmk_5.JPG';
+import gmmk_6 from './images/gmmk/gmmk_6.JPG';
+import gmmk_7 from './images/gmmk/gmmk_7.JPG';
+import gmmk_8 from './images/gmmk/gmmk_8.JPG';
+import gmmk_9 from './images/gmmk/gmmk_9.JPG';
+import durock from './images/gmmk/durockswitch.JPG';
+
 
 const Gmmkpro = () => {
   document.body.style.backgroundColor = "#f5e8bc"
@@ -13,14 +25,14 @@ const Gmmkpro = () => {
       <h1>gmmk pro</h1>
       <div className="content">
         <div className="gmmk-intro">
-          <img id="gmmk-header" src={gmmkpro_3} />
+          <img id="gmmk-header" src={gmmk_1} />
           <p>
             this was my first actual build. i made this one for my sister's boyfriend.
             the gmmk pro is a 75% aluminum board from glorious. i ordered the barebones set, but they also have a prebuilt option!
             the board has beautiful rgb light bars on the left and right sides, and the rgb is fully customizable.
           </p>
           <div className="stock-specs">
-            <img id="gmmk-box" src={gmmkpro_1} />
+            <img id="gmmk-box" src={gmmk_8} />
             <div className="specs-container">
               <h2>gmmk pro specs:</h2>
               <p>-75% layout</p>
@@ -69,14 +81,23 @@ const Gmmkpro = () => {
             and it is very difficult to remove the pcb from the plate. aside from that and the stock stabilizers not being the best, 
             i really think glorious made a fantastic keeb for beginners. 
           </p>
-          <img id="final-build" src={gmmkpro_3} /> 
+          <img id="final-build" src={gmmk_4} /> 
           {/*replace images with new images*/}
           <h3>mods:</h3>
           <p>-tape mod</p>
           <p>-bandaid mod for spacebar</p>
           <p>-shine-through pudding keycaps</p>
           <p>-durock plate mounted stabilizers (holee modded and lubed)</p>
-          <p>-durock lavender linear switches</p>
+          <p>-durock lavender linear switches</p> 
+        </div>
+        <div className="gmmk-gallery">
+          <h2>gallery</h2>
+          <img id="gmmk-2" src={gmmk_2} />
+          <img id="gmmk-3" src={gmmk_3} />
+          <img id="gmmk-5" src={gmmk_5} />
+          <img id="gmmk-6" src={gmmk_6} />
+          <img id="gmmk-7" src={gmmk_7} />
+          <img id="gmmk-9" src={gmmk_9} />
         </div>
       </div>
     </div>
@@ -86,44 +107,3 @@ const Gmmkpro = () => {
 
 export default Gmmkpro;
 
-
-export function Navbar() {
-  return (
-    <nav className="navigation">
-      <a href="/home" className="brand-name">
-        spud keebs
-      </a>
-      <button className="hamburger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div
-        className="navigation-menu">
-        <ul>
-          <li>
-            <a className="navigation-item" href="/home">home</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/boards">boards</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/about">about</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}

@@ -1,5 +1,16 @@
 import React from "react";
 import "../components/navbar.css";
+import Navbar from '../components/Navbar';
+import "../rk68.css";
+import rk_1 from './images/rk/rk_1.JPG';
+import rk_2 from './images/rk/rk_2.JPG';
+import rk_3 from './images/rk/rk_3.JPG';
+import rk_4 from './images/rk/rk_4.JPG';
+import rk_5 from './images/rk/rk_5.JPG';
+import rk_6 from './images/rk/rk_6.JPG';
+import rk_7 from './images/rk/rk_7.JPG';
+import rk_8 from './images/rk/rk_8.jpg';
+import alpaca from './images/rk/alpacaswitch.JPG';
 
 const Rk68 = () => {
   document.body.style.backgroundColor = "#f5e8bc"
@@ -9,7 +20,7 @@ const Rk68 = () => {
       <h1>royal kludge rk68</h1>
       <div className="content">
         <div className="rk68-intro">
-          {/* <img id="ep75-1" src={ep75_1} /> */}
+          <img id="rk-3" src={rk_3} />
           <p>
             this was my first mod. i built this one as a gift for my sister!
             i got the rk68 off amazon after watching several youtube videos that recommended this
@@ -19,11 +30,11 @@ const Rk68 = () => {
           </p>
           <div className="stock">
             <h2>stock board</h2>
-            {/* <img id="stock-board" src={ep75_3} /> */}
+            <img id="rk-8" src={rk_8} />
             <p>
-              the rk68 comes with white shine-through keycaps that i ended up replacing with a corgi 
+              the rk68 comes with white shine-through keycaps that i ended up replacing with a cute corgi 
               keycap set i found on amazon. i replaced the stabilizers with durock plate mounted stabs (holee modded and lubed). 
-              the stock stabilizers aren't great, i will say, but they are very easy to replace. there are 
+              the stock stabilizers aren't great, but they are very easy to replace. there are 
               no foams in this board, so i did end up adding a thin layer of foam in the case. i also
               double layer tape modded the pcb and band-aid modded the spacebar.
             </p>
@@ -34,8 +45,8 @@ const Rk68 = () => {
                 <p>-hot swappable</p>
                 <p>-65% layout</p>
                 <p>-$52.99 on amazon</p>
+                <img id="rk-5" src={rk_5} />
               </div>
-              {/* <img id="box" src={ep75_4} /> */}
             </div>
           </div>
           <div className="switches">
@@ -45,8 +56,8 @@ const Rk68 = () => {
               they sounded and felt more on the clicky end. i replaced them with alpaca linears from prime keyboards.
               i lubed and filmed the switches.
             </p>
+            <img id="alpaca" src={alpaca} />
             <div className="switch-specs">
-              {/* <img id="switches" src={ep75_2} /> */}
               <div className="alpaca-linears">
                 <h3>alpaca linears:</h3>
                 <p>-linear</p>
@@ -74,18 +85,21 @@ const Rk68 = () => {
             on the market, but for the price, this board is pretty great and very easy to customize. 
           </p>
           <div className="final-img">
-            {/* <img id="final-board" src={ep75_6} /> */}
-            <p>
-
-            </p>
-            {/* <img id="final-board2" src={ep75_7} /> */}
+            <img id="rk-2" src={rk_2} />
           </div>
-          <h3>mods:</h3>
+          <h3>mods</h3>
           <p>-tape mod</p>
           <p>-alpaca linears (lubed and filmed)</p>
           <p>-corgi keycaps from amazon</p>
           <p>-durock plate mount stabilizers (lubed and holee modded)</p>
           <p>-case foam</p>
+        </div>
+        <h2>gallery</h2>
+        <div className="rk-gallery">
+          <img id="rk-4" src={rk_4} />
+          <img id="rk-1" src={rk_1} />
+          <img id="rk-6" src={rk_6} />
+          <img id="rk-7" src={rk_7} />
         </div>
       </div>
     </div>
@@ -93,45 +107,3 @@ const Rk68 = () => {
 };
 
 export default Rk68;
-
-
-export function Navbar() {
-  return (
-    <nav className="navigation">
-      <a href="/home" className="brand-name">
-        spud keebs
-      </a>
-      <button className="hamburger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div
-        className="navigation-menu">
-        <ul>
-          <li>
-            <a className="navigation-item" href="/home">home</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/boards">builds</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/about">about</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}

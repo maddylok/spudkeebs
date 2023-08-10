@@ -3,7 +3,7 @@
 }
 
 #gmmk-header {
-    height: 400px;
+    height: 30vw;
 }
 
 #gmmk-box {
@@ -36,5 +36,77 @@
 }
 
 #final-build {
-    height: 400px;
+    height: 700px;
+}
+
+#gmmk-2 {
+    height: 500px;
+    padding: 8px;
+}
+
+#gmmk-3 {
+    height: 500px;
+    padding: 8px;
+}
+
+#gmmk-5 {
+    height: 500px;
+    padding: 8px;
+}
+
+#gmmk-6 {
+    height: 500px;
+    padding: 8px;
+}
+
+#gmmk-7 {
+    height: 500px;
+    padding: 8px;
+}
+
+#gmmk-9 {
+    height: 500px;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    #gmmk-header {
+        height: 40vw;
+    }
+    #gmmk-box {
+        height: 80vw;
+    }
+    .stock-specs {
+        display: flex;
+        flex-direction: column;
+    }
+    .switch-specs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #gmmk-switch {
+        height: 80vw;
+    }
+    #final-build {
+        height: 80vw;
+    }
+    #gmmk-2 {
+        height: 80vw;
+    }
+    #gmmk-3 {
+        height: 80vw;
+    }
+    #gmmk-5 {
+        height: 80vw;
+    }
+    #gmmk-6 {
+        height: 80vw;
+    }
+    #gmmk-7 {
+        height: 80vw;
+    }
+    #gmmk-9 {
+        height: 80vw;
+    }
 }

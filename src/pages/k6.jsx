@@ -1,7 +1,16 @@
 import React from "react";
-import keychron from './images/keychron.jpg';
 import "../k6.css";
 import "../components/navbar.css";
+import Navbar from '../components/Navbar';
+import k6_1 from './images/k6/k6_1.JPG';
+import k6_2 from './images/k6/k6_2.JPG';
+import k6_3 from './images/k6/k6_3.JPG';
+import k6_4 from './images/k6/k6_4.JPG';
+import k6_5 from './images/k6/k6_5.JPG';
+import k6_6 from './images/k6/k6_6.JPG';
+import k6_7 from './images/k6/k6_7.JPG';
+import k6_8 from './images/k6/k6_8.JPG';
+import k6_9 from './images/k6/k6_9.JPG';
 
 const K6 = () => {
   document.body.style.backgroundColor = "#f5e8bc"
@@ -11,7 +20,7 @@ const K6 = () => {
       <h1>keychron k6</h1>
       <div className="content">
         <div className="k6-intro">
-          <img id="k6intro" src={keychron} />
+          <img id="k6-2" src={k6_2} />
           <p>
             my very first mechanical keyboard. when i was a mere newbie in the hobby. i made the mistake of not ordering it hot-swappable,
             purely because i didn't do enough research to understand what hot-swappable meant and went with the cheaper option.
@@ -22,7 +31,7 @@ const K6 = () => {
         </div>
         <div className="stock">
           <h2>stock board</h2>
-          {/* <img id="stock-board" src={ep75_3} /> */}
+          <img id="k6-9" src={k6_9} />
           <p>
             my k6 only has the white backlight which i really like,
             though keychron does offer the option for full rgb. there are so many different modes for the backlight as well. i don't love
@@ -39,7 +48,6 @@ const K6 = () => {
               <p>-mac and windows compatibility</p>
               <p>-pre-lubed</p>
             </div>
-            {/* <img id="box" src={ep75_4} /> */}
           </div>
         </div>
         <div className="switches">
@@ -51,7 +59,7 @@ const K6 = () => {
             same pricepoint.
           </p>
           <div className="switch-specs">
-            {/* <img id="switches" src={ep75_2} /> */}
+            <img id="k6-4" src={k6_4} />
             <div className="gateron-brown">
               <h3>gateron brown:</h3>
               <p>-tactile</p>
@@ -71,12 +79,16 @@ const K6 = () => {
             i suggest the keychron Q1.
           </p>
           <div className="final-img">
-            {/* <img id="final-board" src={ep75_6} /> */}
-            <p>
-
-            </p>
-            {/* <img id="final-board2" src={ep75_7} /> */}
+            <img id="k6-3" src={k6_3} />
           </div>
+        </div>
+        <div className="k6-gallery">
+          <h2>gallery</h2>
+          <img id="k6-1" src={k6_1} />
+          <img id="k6-5" src={k6_5} />
+          <img id="k6-6" src={k6_6} />
+          <img id="k6-7" src={k6_7} />
+          <img id="k6-8" src={k6_8} />
         </div>
       </div>
     </div>
@@ -84,45 +96,3 @@ const K6 = () => {
 };
 
 export default K6;
-
-
-export function Navbar() {
-  return (
-    <nav className="navigation">
-      <a href="/home" className="brand-name">
-        spud keebs
-      </a>
-      <button className="hamburger">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-      <div
-        className="navigation-menu">
-        <ul>
-          <li>
-            <a className="navigation-item" href="/home">home</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/boards">builds</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/about">about</a>
-          </li>
-          <li>
-            <a className="navigation-item" href="/contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  );
-}

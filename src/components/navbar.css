@@ -13,7 +13,7 @@
 .brand-name {
     text-decoration: none;
     color: black;
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: 600;
     margin-left: 1rem;
     display: inline-flex;
@@ -33,27 +33,30 @@
     color: black;
 }
 
-.navigation-item:hover {
-    color: #9e8c43;
-}
+@media screen and (min-width: 768px) {
+    .navigation-item:hover {
+        color: #9e8c43;
+    }
 
-.navigation-item::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #9e8c43;
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
+    .navigation-item::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #9e8c43;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
 
-.navigation-item:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    .navigation-item:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
 }
 
 /* need to figure out how to get rid of underline on navbar border */
@@ -118,5 +121,60 @@
 @media screen and (max-width: 768px) {
     .navigation-menu ul {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu {
+        transition: all .75s ease;
+        width: 100%;
+        display: none;
+    }
+
+    .navigation-menu {
+        /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+        position: absolute;
+        top: 75px;
+        /* // stacks the li tags vertically  */
+        flex-direction: column;
+        padding: 0px;
+        /* // makes menu span full height and width */
+        /* max-width: 100%; */
+        height: 280px;
+        background-color: #e0c56d;
+        border: 1px solid #e0c56d;
+        z-index: 999999;
+        overflow: hidden;
+    }
+
+    .navigation-menu li {
+        /* // centers link text and strips off margin */
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .navigation-menu li a {
+        color: #607160;
+        /* // increases the surface area of the anchor tag to span the full width of the menu */
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu.expanded ul {
+        display: block;
+        transition: all 0.75s ease;
+    }
+
+    .navigation-menu.expanded {
+        transition: all 0.75s ease;
+        z-index: 1;
+        right: 0;
+        width: 100%;
+        display: block;
     }
 }
